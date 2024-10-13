@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moon ecip css</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(180deg, #fcb325, #b5670e);
+    }
+
+    .eclipse-container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      background-color: #f7b149;
+      border-radius: 50%;
+      box-shadow: 0 0 50px rgba(255, 255, 0, 0.6);
+      overflow: hidden;
+    }
+
+    .moon {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      top: 20%;
+      left: 40%;
+      background-color: #f7eb4f;
+      border-radius: 50%;
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="eclipse-container">
+    <div class="moon"></div>
+  </div>
+
+</body>
+</html>
