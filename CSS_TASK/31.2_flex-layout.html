@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.main{
+            height: 500px;
+            width: 500px;
+            margin: 100px;
+        }
+        .img{
+            background: url("https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom2.jpg");
+            overflow: hidden;
+        }
+        .img-left{
+            height: 500px;
+            width: 500px;
+            background-color: rgba(0,0,0,0.2);
+            transform: translate(-90%,-100%);
+            transition: 0.8s;
+        }
+        .img:hover.img-left{
+            transform: translate(0%,0%);
+        }
+        .img-right{
+            height: 500px;
+            width: 500px;
+            background-color: rgba(0,0,0,0.2);
+            transform: translate(100%,90%);
+            transition: 0.8s;
+        }
+        .img:hover.img-right{
+            transform: translate(0%,0%);
+        }
+
+       
+
+
+
+
+
+
+
+
+
+
+        .img-1{
+            height: 320px;
+            width: 500px;
+            border: 2px solid ;
+            background: url("https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom2.jpg");
+        }
+
+        
+
+        
+
+
+        .main:hover .img-left{
+            transform: translateX(0px);
+        }
+        .main:hover .img-right{
+            transform: translateX(0px);
+        }
+    
+    
+        
+        #box3{
+            display: flex;
+        }
+        .img-left{
+            width: 200%;
+            
+        }
+        .img-right{
+            width: 100%;
+            border: 2px solid gold;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="main">
+        <div class="box" id="box3">
+            <div class="img">
+            <div class="img-left"></div>
+            <div class="img-righr"></div>
+        </div>
+            
+            <div class="img-1">right</div>
+
+        </div>
+        </div>
+
+
+   
+
+</body>
+</html>
+
