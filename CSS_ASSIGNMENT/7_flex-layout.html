@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .article,
+        .third-section {
+            background-color: #00e5ff;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .article {
+            flex: 1;
+        }
+
+        .third-section {
+            flex: 1.5;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 90px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .text-box {
+            padding: 10px;
+            background-color: #fff;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="article">
+            <h2>First article</h2><br>
+            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday
+                carry vinyl typewriter Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi porro sequi et
+                totam cum! Quae assumenda excepturi sunt expedita. Blanditiis explicabo sunt nulla eius nesciunt sed
+                unde? Dolorem, quae corporis Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolore
+                aliquam repellat libero error tempora ad iusto corrupti vero, id rerum harum sunt? Asperiores, suscipit!
+                Facilis quod doloremque minima dolore?</p>
+        </div>
+        <div class="article">
+            <h2>Second article</h2><br>
+            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday
+                carry vinyl typewriter Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, ipsam quo
+                eaque similique corporis, numquam perspiciatis voluptatem odit voluptatum saepe rerum distinctio magni
+                possimus id cumque molestias culpa maiores hic Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati praesentium ratione assumenda, ipsa totam impedit, molestiae ab ut nemo vero quisquam,
+                corporis suscipit labore! Cupiditate, totam! Perferendis ipsam iure impedit.</p>
+        </div>
+        <div class="third-section">
+            <div class="buttons">
+                <button>Smile</button>
+                <button>Laugh</button>
+                <button>Wink</button>
+                <button>Shrug</button>
+            </div>
+            <div class="text-box">
+                Blush
+            </div>
+            <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Corrupti ratione nihil expedita provident perferendis? Totam fuga nobis
+                dolor labore corrupti laudantium optio voluptatum obcaecati</p>
+                <p>
+                architecto? Deleniti suscipit aliquam natus.
+                Alias Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsa magnam doloremque velit
+                dolorum voluptas nemo, sunt fugiat, ea delectus iste eaque corporis impedit sint? Optio vel quaerat id
+                voluptatibus.</p>
+        </div>
+    </div>
+</body>
+
+</html>
