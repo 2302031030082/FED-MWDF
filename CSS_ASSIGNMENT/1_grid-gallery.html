@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+   <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.gallery-container {
+    display: flex;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    flex: 2;
+    padding: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.side-nav {
+    flex: 1;
+    background-color: #111;
+    padding: 20px;
+    text-align: right;
+}
+
+.side-nav ul {
+    list-style: none;
+}
+
+.side-nav ul li {
+    margin: 20px 0;
+}
+
+.side-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.side-nav ul li a:hover {
+    color: #f90;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 18px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+
+.social-media a:hover {
+    color: #f90;
+} 
+
+@media (max-width: 768px) {
+    .gallery-container {
+        flex-direction: column;
+    }
+
+    .side-nav {
+        text-align: center;
+    }
+
+    .side-nav ul li {
+        margin: 10px 0;
+    }
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+   </style>
+</head>
+
+<body>
+
+    <div class="gallery-container">
+        <div class="gallery">
+            <div class="gallery-item"><img src="mg1.jpg"alt="Image 1"></div>
+            <div class="gallery-item"><img src="mg2.jpg"alt="Image 2"></div>
+            <div class="gallery-item"><img src="mg3.jpg"alt="Image 3"></div>
+            <div class="gallery-item"><img src="mg4.jpg"alt="Image 4"></div>
+            <div class="gallery-item"><img src="mg5.jpg"alt="Image 5"></div> 
+            <div class="gallery-item"><img src="mg6.jpg" alt="Image 6"></div>
+            <div class="gallery-item"><img src="mg7.jpg"alt="Image 7"></div>
+            <div class="gallery-item"><img src="mg8.jpg"alt="Image 8"></div>
+            <div class="gallery-item"><img src="mg9.jpg"alt="Image 9"></div>
+        </div>
+
+
+        <nav class="side-nav">
+            <ul>
+                <li><a href="#">SHUTTER</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Bio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="social-media">
+               
+                <a href="#" class="  fa-brands fa-facebook"></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+          
+        </nav>
+    </div>
+
+</body>
+</html>
