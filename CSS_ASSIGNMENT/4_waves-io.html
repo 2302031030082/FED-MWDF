@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team Section</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* font-family: Arial, sans-serif; */
+            background-color: #1a1a1a;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .team-section {
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 36px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #999;
+            margin-bottom: 50px;
+        }
+
+        .team-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            position: relative;
+        }
+
+        .team-member {
+            width: 80px;
+            height: 80px;
+            margin: 0 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            transform: translateY(20px);
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .team-member.highlighted {
+            width: 120px;
+            height: 120px;
+            transform: translateY(-40px);
+        }
+
+        .team-member.highlighted h2 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #ff5252;
+        }
+
+        .team-member.highlighted p {
+            font-size: 14px;
+            color: #ffb3b3;
+        }
+
+        .team-container::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #ff5252;
+            transform: translateY(100%,100%) scale(-2.5,-2.5);
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="team-section">
+        <h1>OUR TEAM</h1>
+        <p>Meet the success team. Share your thoughts with them.</p>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="mg4.jpg" alt="Team Member 1">
+            </div>
+            <div class="team-member">
+                <img src="mg2.jpg" alt="Team Member 2">
+            </div>
+            <div class="team-member highlighted">
+                <img src="mg3.jpg" alt="Web Designer">
+                <h2>Web Designer</h2>
+                <p>UI/UX Designer</p>
+            </div>
+            <div class="team-member">
+                <img src="mg5.jpg" alt="Team Member 4">
+            </div>
+            <div class="team-member">
+                <img src="mg6.jpg" alt="Team Member 5">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
