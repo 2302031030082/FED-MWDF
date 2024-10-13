@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.main{
+            height: 500px;
+            width: 900px;
+            overflow: hidden;
+            margin: 100px;
+            background-color:black;
+            
+        }
+        .img-left{
+            height: 320px;
+            width: 520px;
+            border: 2px solid ;
+            background: url("https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom2.jpg");
+            transform: translateX(-20px);
+            background-size: 100% 100%;
+            transition: 1s;
+        }
+
+
+        .img-right{
+            height: 320px;
+            width: 220px;
+            border: 2px solid ;
+            background: url("https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom2.jpg");
+            transform: translateX(-20px);
+            background-size: 100% 100%;
+            transition: 1s;
+        }
+
+
+
+
+
+        .border-left{
+            height: 200px;
+            width: 400px;
+            border: 5px solid white;
+            margin: 50px auto;
+            transform: translateX(-20px);
+            transition: 1s;
+            font-size: 20px;
+            color: white;
+            text-align: right;
+            opacity: 0;
+        }
+
+        .border-right{
+            height: 200px;
+            width: 400px;
+            border: 5px solid white;
+            margin: 50px auto;
+            transform: translateX(-20px);
+            transition: 1s;
+            font-size: 20px;
+            color: white;
+            text-align: right;
+            opacity: 0;
+        }
+
+
+
+        .main:hover .border-left{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+
+        .main:hover .border-right{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+
+
+
+        .main:hover .img-left{
+            transform: translateX(0px);
+        }
+
+
+        .main:hover .img-right{
+            transform: translateX(0px);
+        }
+    
+    
+        
+        #box3{
+            display: flex;
+            gap: 20px;
+        }
+        .img-left{
+            width: 100%;
+            border: 2px solid gold;
+        }
+        .img-right{
+            width: 5000px;
+            border: 2px solid gold;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="main">
+        <div class="box" id="box3">
+            <div class="img-left">left
+                <div class="border-left">new arrivale</div>
+            </div>
+            
+            <div class="img-right">right
+                <div class="border-right">new arrivale</div>
+            </div>
+
+        </div>
+        </div>
+</body>
+</html>
+
