@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Shapes</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f3f3f3;
+    }
+
+    canvas {
+      border: 2px solid gold;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="myCanvas" width="500" height="300"></canvas>
+
+  <script>
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Draw left gradient rectangle
+    const gradient1 = ctx.createLinearGradient(0, 0, 150, 150);
+    gradient1.addColorStop(0, "red");
+    gradient1.addColorStop(1, "orange");
+    ctx.fillStyle = gradient1;
+    ctx.fillRect(50, 100, 100, 100);
+
+    // Draw center circle with rainbow gradient
+    const gradient2 = ctx.createLinearGradient(0, 0, 200, 0);
+    gradient2.addColorStop(0, 'red');
+    gradient2.addColorStop(0.2, 'orange');
+    gradient2.addColorStop(0.4, 'yellow');
+    gradient2.addColorStop(0.6, 'green');
+    gradient2.addColorStop(0.8, 'blue');
+    gradient2.addColorStop(1, 'purple');
+    
+    ctx.beginPath();
+    ctx.arc(250, 150, 60, 0, Math.PI * 2, false);
+    ctx.fillStyle = gradient2;
+    ctx.fill();
+    ctx.closePath();
+
+    // Draw right solid rectangle
+    ctx.fillStyle = "orange";
+    ctx.fillRect(350, 100, 100, 100);
+  </script>
+
+</body>
+</html>
