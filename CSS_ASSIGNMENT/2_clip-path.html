@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section_Clip path</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(22, 21, 21, 0.5);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo img {
+            width: 60px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-links li a:hover {
+            color: #ff5733;
+        }
+
+        
+        .hero {
+            height: 100vh;
+            background: url('mg7.jpg') no-repeat center center/cover;
+            clip-path: polygon(0% 0.5%, 100% 0%, 100% 69.5%, 50% 100%, 0% 72.3%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        
+
+        .hero-content {
+            text-align: center;
+            color: rgb(185, 36, 36);
+            max-width: 800px;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .cta-buttons a {
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        .btn-primary {
+            background-color: #f37154;
+            color: rgb(22, 21, 21);
+        }
+
+        .btn-primary:hover {
+            background-color: #e74c3c;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: rgb(219, 210, 210);
+            border: 2px solid rgb(150, 16, 16);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgb(102, 96, 96);
+            color: #ff5733;
+        }
+
+        .slider-arrows a {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgb(136, 129, 129);
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .arrow-left {
+            left: 10px;
+        }
+
+        .arrow-right {
+            right: 10px;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                flex-direction: column;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="logo.png" alt="Logo"></a>
+              
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Our Clients Are Our First Priority</h2>
+            <h1>Welcome to Sky</h1>
+            <h2>________*_______</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae quis autem molestias officia illum
+                veniam quas! Hic a eos delectus sunt quisquam minima quibusdam, esse culpa dolores id eius deserunt.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn-primary">Get Started Now</a>
+                <a href="#" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Slider Arrows (optional) -->
+        <div class="slider-arrows">
+            <a href="#" class="arrow-left">&#10094;</a>
+            <a href="#" class="arrow-right">&#10095;</a>
+        </div>
+    </section>
+
+</body>
+
+</html>
