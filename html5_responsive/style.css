@@ -1,0 +1,448 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  .row{
+      display:flex;
+      flex-wrap: wrap;
+  }
+  
+  /* Mobile 300 - 600 */
+  [class*='col-']{
+      width:100%;
+  }
+  
+  /* tablet 600 - 786 */
+  @media only screen and (min-width: 600px) {
+      .col-s-1 {width: 8.33%;}
+      .col-s-2 {width: 16.66%;}
+      .col-s-3 {width: 25%;}
+      .col-s-4 {width: 33.33%;}
+      .col-s-5 {width: 41.66%;}
+      .col-s-6 {width: 50%;}
+      .col-s-7 {width: 58.33%;}
+      .col-s-8 {width: 66.66%;}
+      .col-s-9 {width: 75%;}
+      .col-s-10 {width: 83.33%;}
+      .col-s-11 {width: 91.66%;}
+      .col-s-12 {width: 100%;}
+    }
+  
+  /* Desktop/laptop 786 - 1400 */
+  @media only screen and (min-width: 786px) {
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+    }
+    
+/* 
+    .logo {
+        margin-right: 25%;
+        color: rgb(15, 12, 12);
+        font-size: 30px;
+      } */
+
+
+
+
+
+
+
+      
+  .navbar {
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgb(7 0 0/75%),   
+    rgb(14 7 7 / 53%)), url(/newpro/img/img18.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+
+
+  
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    color:white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    display:block;
+    float:left;
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar a {
+      float:none;
+        width:100%;
+         }
+  }
+
+/* ____________about us_____________ */
+
+.top{
+  font-size: 20px;
+}
+
+.btn {
+  width: 175px;
+  float: left;
+  padding-top: 30px;
+}
+.btn a {
+  font-size: 20px;
+  background-color: #252525;
+  color: #ffffff;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.btn a:hover {
+  color: #ffffff;
+  background-color: #8b8988;
+}
+
+  
+  
+  /* ___________gellary_____________ */
+
+  .types {
+    padding: 5% 0%;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: rgb(110, 75, 75);
+    font-weight: 400;
+    font-size: 25px;
+  }
+ 
+  .type_p {
+    color: black;
+    font-size: 15px;
+    margin: 25px 0px;
+  }
+ 
+  .row {
+    display: flex;
+  }
+ 
+  .row img {
+    width: 100%;
+    height: 400px;
+    border-radius: 5%;
+  }
+ 
+  .col {
+    flex-basis: 30%;
+    margin: 0px 10px;
+  }
+ 
+  .col h5 {
+    text-align: left;
+    padding-top: 3%;
+    margin-left: 4%;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(85, 66, 52);
+  }
+ 
+  .para {
+    text-align: left;
+    margin-left: 4%;
+    color: #777;
+    font-size: 18px;
+  }
+
+
+  
+
+  /* _____services_____ */
+  .row{
+    text-align: center;
+    color: rgb(110, 75, 75);
+    font-weight: 400;
+    font-size: 25px;
+  }
+  .box{
+    padding: 1%;
+    margin: auto;
+  }
+
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+
+  
+    /* __________service_________ */
+    .mainbar{
+        background-image: url(/newpro/img/img19.jpg);
+        height: auto;
+        padding-bottom: 100px;
+        background-attachment: fixed;
+        width: 100%; 
+    }
+
+    .services_taital {
+      width: 100%;
+      float: left;
+      font-size: 40px;
+      color: #ffffff;
+      font-weight: bold;
+      text-align: center;
+  }
+  
+  .services_text {
+      width: 100%;
+      float: left;
+      font-size: 16px;
+      color: #ffffff;
+      margin: 0px;
+      text-align: center;
+  }
+
+
+    .house_icon {
+      width: 200px;
+      height: auto;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+  }
+  .house_icon img {
+    width: 45px;
+    min-height: 50px;
+}
+
+.box_main .house_icon .image_2 {
+  display: none;
+}
+.box_main:hover .house_icon .image_2 {
+  display: block;
+}
+.box_main:hover .house_icon .image_1 {
+  display: none;
+}
+
+.box_main:hover {
+  background-color: #ffffff;
+}
+
+.box_main {
+  width: 100%;
+  background-color: #f76d37;
+  padding: 40px 30px;
+  box-shadow: 0px 0px 18px -6px;
+}
+.box_main:hover .decorate_text {
+  color: #000;
+}
+
+.box_main:hover .tation_text {
+  color: #000;
+}
+
+.box_main:hover .readmore_bt {
+  display: block;
+}
+
+.box_main:hover .readmore_bt a {
+  color: #ffffff;
+  background-color: #000;
+}
+
+.services_section_2 {
+  width: 100%;
+  float: left;
+  padding-top: 50px;
+}
+
+.decorate_text {
+  width: 100%;
+  font-size: 28px;
+  color: #ffffff;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.tation_text {
+  width: 100%;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0px;
+  text-align: center;
+}
+
+.readmore_bt {
+  width: 175px;
+  padding-top: 40px;
+  margin: 0 auto;
+  display: flex;
+  display: none;
+  padding-bottom: 40px;
+}
+
+.readmore_bt a {
+  width: 100%;
+  float: left;
+  font-size: 18px;
+  background-color: #070603;
+  color: #ffffff;
+  text-align: center;
+  padding: 8px;
+  text-transform: uppercase;
+}
+
+.readmore_bt a:hover {
+  color: #ffffff;
+  background-color: #f76d37;
+}
+
+
+
+
+/* __________contect___________ */
+.contact_section {
+  width: 100%;
+  float: left;
+}
+
+.contact_text {
+  width: 100%;
+  float: left;
+  font-size: 40px;
+  text-align: center;
+  color: #f76d37;
+  font-weight: bold;
+}
+
+.contact_section_2 {
+  width: 100%;
+  float: left;
+}
+
+.mail_section {
+  width: 100%;
+  float: left;
+  background-image: url(/newpro/img/img-5.png);
+  height: auto;
+  padding: 23px 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.long_text {
+  width: 52%;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: center;
+  color: #b2afaf;
+  padding-top: 30px;
+  display: flex;
+}
+
+.email_text {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+
+.email-bt {
+  color: #080707;
+  width: 100%;
+  height: 55px;
+  font-size: 20px;
+  padding: 20px 40px;
+  border: 0px;
+  border-radius: 30px;
+}
+
+.massage-bt {
+  color: #080707;
+  width: 100%;
+  height: 150px;
+  font-size: 20px;
+  padding: 40px;
+  border: 0px;
+  border-radius: 50px;
+}
+
+.send_btn {
+  width: 170px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main_bt a {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #d33a11;
+  padding: 15px 50px 12px 50px;
+  border-radius: 30px;
+  display: block;
+}
+
+.main_bt a {
+  color: #ffffff;
+  background-color: #d33a11;
+}
+
+.main_bt a:hover {
+  color: #323131;
+  background-color: #ffffff;
+}
+
+.padding_0 {
+  padding: 0px;
+}
+
+
+
+
+    /* ______________footer___________ */
+    .footer{
+        padding:10px;
+        background-color:black;
+    }
+    
+    .footer .test{
+        color:white;
+        padding:10px;
+        
+    }
+    .copyright_section {
+      width: 100%;
+      float: left;
+      background-color: #ffffff;
+      height: auto;
+  }
+  
+
+
+  /* _______copyright section______ */
+  .copyright_text {
+      font-size: 20px;
+      color: #252525;
+      text-align: center;
+      margin-left: 0px;
+  }
