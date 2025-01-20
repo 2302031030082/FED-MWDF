@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Validation</title>
+</head>
+<body>
+    <h1>Enter a number greater than 10</h1>
+    <script>
+        let userInput;
+
+        // Use a do-while loop to keep asking for input until a number greater than 10 is entered
+        do {
+            userInput = prompt("Please enter a number greater than 10:");
+            userInput = parseFloat(userInput); // Convert the input to a number
+
+            if (isNaN(userInput)) {
+                console.log("That's not a valid number! Please enter a number.");
+            }
+        } while (userInput <= 10 || isNaN(userInput));
+
+        // Once the user enters a valid number greater than 10, display a message
+        console.log("Thank you! You entered a number greater than 10:", userInput);
+    </script>
+</body>
+</html>

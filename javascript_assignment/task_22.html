@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript program that attempts to divide a number by zero.</h1>
+    <script>
+        try {
+            // Attempt to divide a number by zero
+            let number = 10;
+            let result = number / 0;
+
+            // Check for Infinity as a result of division by zero
+            if (!isFinite(result)) {
+                throw new Error("Division by zero is not allowed.");
+            }
+
+            // Log the result if no error
+            console.log("Result:", result);
+        } catch (error) {
+            // Handle the error and display an appropriate message
+            console.error("Error:", error.message);
+        }
+
+    </script>
+</body>
+
+</html>
