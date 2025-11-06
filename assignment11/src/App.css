@@ -1,0 +1,25 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  border-bottom: 3px solid #f36fd4;
+}
+
+.nav-link {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: 
+
+#f36fd4 !important;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
